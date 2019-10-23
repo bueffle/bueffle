@@ -1,0 +1,10 @@
+package main.java.ch.bueffle.webapp.repository;
+
+import ch.bueffle.webapp.model.Card;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CardRepository extends CrudRepository<Cards, Long> {
+
+}
