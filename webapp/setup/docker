@@ -1,1 +1,1 @@
-docker run --name bueffle-mysql -e MYSQL_ROOT_PASSWORD=alasdf34sdf3343tbv -d mysql:5.7
+docker run -p 3306:3306 --name bueffle-mysql -e MYSQL_ROOT_PASSWORD=alasdf34sdf3343tbv -d mysql:5.7 
