@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  bueffle-webapp:
+    build:
+      context: .
+    image: bueffle:latest
+    volumes:
+      - "..:/opt/bueffle"
+    restart: "no"
+    command: tail -f /dev/null
+  bueffle-mysql5.7:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=alasdf34sdf3343tbv
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - GOSU_VERSION=1.7
+      - MYSQL_MAJOR=5.7
+      - MYSQL_VERSION=5.7.28-1debian9
+    ports: 
+      - "3306:3306"
+    restart: "no"
+    volumes:
+      - "../datadir/mysql:/var/lib/mysql"

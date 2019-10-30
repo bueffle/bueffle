@@ -1,4 +1,4 @@
-package ch.bueffle.webapp.service;
+package main.java.ch.bueffle.webapp.service;
 
 import ch.bueffle.webapp.model.Cards;
 
