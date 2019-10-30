@@ -1,4 +1,4 @@
-package main.java.ch.bueffle.webapp.repository;
+package ch.bueffle.webapp.repository;
 
 import ch.bueffle.webapp.model.Cards;
 import org.springframework.data.repository.CrudRepository;

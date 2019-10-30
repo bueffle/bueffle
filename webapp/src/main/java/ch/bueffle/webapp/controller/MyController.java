@@ -1,7 +1,10 @@
-package  ch.bueffle.webapp.controller;
+package ch.bueffle.webapp.controller;
 
 import ch.bueffle.webapp.model.Cards;
 import ch.bueffle.webapp.service.ICardService;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,7 +20,7 @@ public class MyController {
     @GetMapping("/showCards")
     public String findCards(Model model) {
 
-        var cards = (List<Cards>) cardService.findAll();
+    	List<Cards> cards = (List<Cards>) cardService.findAll();
 
         model.addAttribute("cards", cards);
 
