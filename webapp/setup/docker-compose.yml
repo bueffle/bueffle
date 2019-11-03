@@ -6,6 +6,8 @@ services:
     image: bueffle:latest
     volumes:
       - "..:/opt/bueffle"
+    links:
+      - bueffle-mysql5.7:mysql
     restart: "no"
     command: tail -f /dev/null
   bueffle-mysql5.7:

@@ -1,0 +1,6 @@
+ch/bueffle/webapp/repository/CardRepository.class
+ch/bueffle/webapp/controller/MyController.class
+ch/bueffle/webapp/service/ICardService.class
+ch/bueffle/webapp/service/CardService.class
+ch/bueffle/webapp/Application.class
+ch/bueffle/webapp/model/Cards.class

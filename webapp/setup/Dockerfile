@@ -8,7 +8,7 @@ RUN mkdir -p /var/temp \
 RUN curl -o /var/temp/zulu11.33.15.rpm https://cdn.azul.com/zulu/bin/zulu11.33.15-ca-jdk11.0.4-linux.x86_64.rpm
 
 # Install binaries
-RUN yum install -y /var/temp/zulu11.33.15.rpm
+RUN yum install -y /var/temp/zulu11.33.15.rpm maven
 
 # Clean space
 RUN rm -rf /var/temp/* \
