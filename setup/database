@@ -1,0 +1,21 @@
+CREATE DATABASE bueffle;
+
+CREATE USER bueffler IDENTIFIED BY 'alasdf34sdf3343tbv';
+GRANT ALL ON bueffle.* TO 'bueffler';
+
+use bueffle;
+
+CREATE TABLE `Cards` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `question` varchar(255) NOT NULL DEFAULT '',
+  `answer` varchar(255) NOT NULL DEFAULT '',
+  `user_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `Cards` (`question`, `answer`, `user_id`)
+VALUES
+	('What color is the sky at lunch time on a sunny day?', 'Green', NULL),
+	('How many fingers does the typical human have?', '8-10', NULL);
+
