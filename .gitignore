@@ -5,6 +5,7 @@
 .project
 .settings
 target
+datadir
 
 ### IntelliJ IDEA ###
 .idea
