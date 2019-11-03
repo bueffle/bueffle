@@ -1,7 +1,7 @@
 CREATE DATABASE bueffle;
 
 CREATE USER 'bueffler@%' IDENTIFIED BY 'alasdf34sdf3343tbv';
-GRANT ALL ON bueffle.* TO bueffler@%;
+GRANT ALL ON bueffle.* TO 'bueffler'@'%';
 
 use bueffle;
 
