@@ -26,4 +26,4 @@ webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/created
 webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 webapp/target/classes/application.properties
 
-.idea
+.idea/
